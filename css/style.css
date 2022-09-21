@@ -119,6 +119,9 @@ aside {
     overflow-y: auto;
     padding-top: 90px;
 }
+.lib-nav {
+    padding-left: 1.2rem;
+}
 .lib-nav ul li {
     padding-right: 1.8rem;
     padding-top: 1.2rem;
