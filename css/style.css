@@ -12,7 +12,7 @@
     --white: rgba(255, 255, 255, 1);
     --lightgray: rgba(113, 113, 113, 1);
     --lightgreen: rgba(173, 255, 47, 1);
-    --font-m: 0.8rem;
+    --font-m: 0.7rem;
     --font-l: 15px;
     --font-s: 11px;
 }
@@ -201,3 +201,17 @@ aside {
         width: calc((100% - 2rem) / 4);
     }
 }
+@media screen and (max-width: 576px) {
+    .libraries {
+        max-width: 330px;
+    }
+    .card {
+        width: calc((100% - 1rem) / 2);
+    }
+}
+/* @media screen and (max-width: 450px) {
+    .main-content {
+        min-width: 450px;
+        height: 100vh;
+    }
+} */
