@@ -103,6 +103,7 @@ main {
     width: 100%;
     height: calc(100vh - 90px);
 }
+/* left nav */
 #left-nav {
     width: 230px;
     height: 100%;
@@ -126,6 +127,21 @@ svg path {
 #left-nav > div ul li a {
     vertical-align:middle;
     margin-right: 5px;
+}
+.playlist-menu {
+    margin-top: 1rem;
+}
+.playlist-menu > span {
+    font-size: var(--font-m);
+    padding-bottom: 0.5rem;
+}
+.playlist-menu #plus i {
+    color: var(--lightgray);
+    font-size: 2.3rem;
+    margin-right: 8px;
+}
+.playlist-menu #plus a {
+    vertical-align:middle;
 }
 /* main content */
 .main-content {
@@ -154,7 +170,7 @@ aside {
     padding-right: 1.8rem;
     padding-top: 1.2rem;
 }
-.lib-nav ul li:hover a {
+ul li:hover a {
     color: var(--white);
 }
 .library {
