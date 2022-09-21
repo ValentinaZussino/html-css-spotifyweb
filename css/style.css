@@ -12,6 +12,9 @@
     --white: rgba(255, 255, 255, 1);
     --lightgray: rgba(113, 113, 113, 1);
     --lightgreen: rgba(173, 255, 47, 1);
+    --font-m: 13px;
+    --font-l
+    --font-s
 }
 .debug {
     border: 1px solid black;
@@ -35,14 +38,31 @@ body {
 .just-center {
     justify-content: center;
 }
+.just-fend {
+    justify-content: flex-end;
+}
+.align-center {
+    align-items: center;
+}
 .btn {
-
+    border: 1px solid;
+    border-radius: 25px;
+    padding: 0.5rem 2rem;
+    text-align: center;
+}
+.btn-white {
+    border-color: var(--white);
+}
+.btn-white-a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: var(--font-m);
 }
 .nav-voices {
     color: var(--lightgray);
     list-style-type: none;
     text-decoration: none;
-    font-size: 13px;
+    font-size: var(--font-m);
 }
 .up-case {
     text-transform: uppercase;
@@ -65,6 +85,7 @@ main {
     width: 230px;
     height: 100%;
     background-color: rgb(0, 9, 128);
+    z-index: 800;
 }
 /* main content */
 .main-content {
@@ -78,7 +99,9 @@ aside {
     background-color: rgba(0, 0, 0, 0.6);
     position: fixed;
     top: 0;
-    z-index: 800;
+    right: 0;
+    z-index: 700;
+    padding-right: 2rem;
 } 
 .libraries {
     height: 100%;
