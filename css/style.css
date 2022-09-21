@@ -41,6 +41,9 @@ span {
 .d-flex {
     display: flex;
 }
+.d-wrap {
+    flex-wrap: wrap;
+}
 .fdir-column {
     flex-direction: column;
 }
@@ -134,9 +137,6 @@ aside {
 .round-card {
     border-radius: 50%;
 }
-.img-album {
-    width: 100%;
-}
 .album-title {
     font-size: var(--font-l);
     padding-top: 0.8rem;
@@ -153,4 +153,13 @@ aside {
     position: fixed;
     bottom: 0;
     z-index: 900;
+}
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+    .libraries {
+        max-width: 500px;
+    }
+    .card {
+        width: calc((100% - 2rem) / 4);
+    }
 }
