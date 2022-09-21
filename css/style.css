@@ -131,6 +131,9 @@ aside {
     width: calc((100% - 3rem) / 6);
     text-align: center;
 }
+.round-card {
+    border-radius: 50%;
+}
 .img-album {
     width: 100%;
 }
