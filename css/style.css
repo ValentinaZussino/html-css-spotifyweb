@@ -109,7 +109,11 @@ main {
     height: 100%;
     background-color: var(--black);
     z-index: 800;
-    padding: 1.2rem 1rem 0.5rem 1rem;
+    padding: 1.2rem 1rem 0 1rem;
+}
+.prova {
+    height: 100%;
+    position: relative;
 }
 #spotify {
     width: 60%;
@@ -121,6 +125,9 @@ main {
 svg path {
     fill: var(--lightgray);
 }
+.main-left-menu path:hover {
+    fill: var(--white);
+}
 #left-nav > div ul li {
     padding-bottom: 0.5rem;
 }
@@ -128,6 +135,9 @@ svg path {
     vertical-align:middle;
     margin-right: 5px;
 }
+/* .main-left-menu li {
+    border-left: 2px solid var(--lightgreen);
+} */
 .playlist-menu {
     margin-top: 1rem;
 }
@@ -140,8 +150,23 @@ svg path {
     font-size: 2.3rem;
     margin-right: 8px;
 }
+.playlist-menu #plus i:hover, .playlist-menu #plus a:hover {
+    color: var(--white);
+}
 .playlist-menu #plus a {
     vertical-align:middle;
+}
+.playlist-list {
+}
+.playlist-list ul li {
+    padding-top: 0.5rem;
+}
+.user-logged {
+    height: 80px;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
 }
 /* main content */
 .main-content {
