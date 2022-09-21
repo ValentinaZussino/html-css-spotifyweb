@@ -12,12 +12,12 @@
     --white: rgba(255, 255, 255, 1);
     --lightgray: rgba(113, 113, 113, 1);
     --lightgreen: rgba(173, 255, 47, 1);
-    --font-m: 13px;
+    --font-m: 12px;
     --font-l
     --font-s
 }
 .debug {
-    border: 1px solid black;
+    border: 1px solid yellow;
     min-height: 50px;
 }
 html {
@@ -27,6 +27,12 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: var(--white);
 }
+img {
+    max-width: 100%;
+}
+span {
+    display: block;
+}
 /* main classes */
 .wrapper {
     width: 100%;
@@ -34,6 +40,9 @@ body {
 }
 .d-flex {
     display: flex;
+}
+.fdir-column {
+    flex-direction: column;
 }
 .just-center {
     justify-content: center;
@@ -101,7 +110,7 @@ aside {
     top: 0;
     right: 0;
     z-index: 700;
-    padding-right: 2rem;
+    padding-right: 1.2rem;
 } 
 .libraries {
     height: 100%;
@@ -111,6 +120,20 @@ aside {
 .lib-nav ul li {
     padding-right: 1.8rem;
     padding-top: 1.2rem;
+}
+.library {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 0 1rem;
+}
+.card {
+    margin-top: 1.5rem;
+    margin-right: 0.5rem;
+    width: calc((100% - 3rem) / 6);
+    text-align: center;
+}
+.img-album {
+    width: 100%;
 }
  /* FOOTER */
  footer {
