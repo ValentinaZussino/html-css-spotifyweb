@@ -61,6 +61,10 @@ span {
     border-radius: 25px;
     padding: 0.5rem 2rem;
     text-align: center;
+    cursor: pointer;
+}
+.btn:hover {
+    transform: scale(1.1);
 }
 .btn-white {
     border-color: var(--white);
@@ -86,6 +90,13 @@ span {
     font-size: var(--font-s);
     color: var(--lightgray);
     font-weight: bold;
+}
+.greenline {
+    height: 2px;
+    width: 30px;
+    background-color: var(--lightgreen);
+    margin: 0 auto;
+    margin-top: 3px;
 }
  /* MAIN */
 main {
@@ -125,6 +136,9 @@ aside {
     padding-right: 1.8rem;
     padding-top: 1.2rem;
 }
+.lib-nav ul li:hover a {
+    color: var(--white);
+}
 .library {
     width: 100%;
     margin-top: 2rem;
@@ -137,6 +151,29 @@ aside {
 }
 .round-card {
     border-radius: 50%;
+}
+.img-album {
+    position: relative;
+    cursor: pointer;
+}
+.layover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--blackop);
+    display: none;
+}
+.img-album i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+}
+.img-album:hover .layover {
+    display: block;
 }
 .album-title {
     font-size: var(--font-l);
