@@ -13,8 +13,8 @@
     --lightgray: rgba(113, 113, 113, 1);
     --lightgreen: rgba(173, 255, 47, 1);
     --font-m: 12px;
-    --font-l
-    --font-s
+    --font-l: 15px;
+    --font-s: 11px;
 }
 .debug {
     border: 1px solid yellow;
@@ -79,11 +79,10 @@ span {
 .bold {
     font-weight: bold;
 }
-.library-title {
-
-}
-.album-title {
-
+.txt-small-gray {
+    font-size: var(--font-s);
+    color: var(--lightgray);
+    font-weight: bold;
 }
  /* MAIN */
 main {
@@ -134,6 +133,11 @@ aside {
 }
 .img-album {
     width: 100%;
+}
+.album-title {
+    font-size: var(--font-l);
+    padding-top: 0.8rem;
+    padding-bottom: 0.5rem;
 }
  /* FOOTER */
  footer {
