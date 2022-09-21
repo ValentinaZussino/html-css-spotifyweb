@@ -42,7 +42,7 @@ body {
     color: var(--lightgray);
     list-style-type: none;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 13px;
 }
 .up-case {
     text-transform: uppercase;
@@ -59,7 +59,7 @@ body {
  /* MAIN */
 main {
     width: 100%;
-    height: calc(100vh - 95px);
+    height: calc(100vh - 90px);
 }
 #left-nav {
     width: 230px;
@@ -74,7 +74,7 @@ main {
 }
 aside {
     width: 100%;
-    height: 95px;
+    height: 90px;
     background-color: rgba(0, 0, 0, 0.6);
     position: fixed;
     top: 0;
@@ -83,13 +83,16 @@ aside {
 .libraries {
     height: 100%;
     overflow-y: auto;
-    padding-top: 95px;
+    padding-top: 90px;
 }
-
+.lib-nav ul li {
+    padding-right: 1.8rem;
+    padding-top: 1.2rem;
+}
  /* FOOTER */
  footer {
     width: 100%;
-    height: 95px;
+    height: 90px;
     background-color: brown;
     position: fixed;
     bottom: 0;
