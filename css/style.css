@@ -286,6 +286,9 @@ footer {
     z-index: 900;
     padding: 0.5rem;
 }
+footer i {
+    cursor: pointer;
+}
 footer .foot-left i, footer .foot-right i {
     padding-right: 0.8rem;
     font-size: var(--font-s);
@@ -309,7 +312,13 @@ footer .foot-left .playing-album div span:last-of-type {
     font-size: var(--font-xs);
     color: var(--lightgray);
 }
-
+footer .foot-center .controls i {
+    padding-right: 1rem;
+    font-size: var(--font-s);
+}
+footer .foot-center .controls i.fa-circle-play {
+    font-size: 23px;
+}
 /* RESPONSIVE */
 @media screen and (max-width: 768px) {
     .card {
