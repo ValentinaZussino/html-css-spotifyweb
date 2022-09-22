@@ -125,6 +125,9 @@ main {
     width: 60%;
     padding-bottom: 1rem;
 }
+#spoty {
+    display: none;
+}
 #left-nav svg {
     width: 25px;
 }
@@ -363,6 +366,9 @@ footer .foot-center .controls i:hover, footer .foot-right i:hover {
     .card {
         width: calc((100% - 1rem) / 2);
     }
+    section.libraries nav.lib-nav ul li a {
+        font-size: var(--font-xs);
+    }
     footer .foot-left .playing-album div:last-of-type, footer .foot-right i.fa-display {
         display: none;
     }
@@ -375,15 +381,47 @@ footer .foot-center .controls i:hover, footer .foot-right i:hover {
 @media screen and (max-width: 450px) {
     #left-nav {
         width: 50px;
+        padding: 0.5rem;
     }
-    .main-content {
+    .main-content, aside {
         width: calc(100% - 50px) ;
     }
-    aside {
-        width: calc(100% - 50px) ;
-    }
-    footer .foot-center .track-bar {
+    #spotify, #home, #search, #yourlib, .playlist-list, #install, #johnd, footer .foot-center .track-bar, footer .foot-right i.fa-list-ul {
         display: none;
+    }
+    #spoty {
+        display: block;
+        padding-bottom: 0.8rem;
+        width: 95%;
+    }
+    #left-nav .main-left-menu li {
+        text-align: center;
+    }
+    #left-nav .main-left-menu li a {
+        margin: 0;
+    }
+    #left-nav .main-left-menu li a svg {
+        font-size: 20px;
+    }
+    .playlist-menu {
+        justify-content: flex-end;
+    }
+    #left-nav .user-logged span {
+        border: none;
+        text-align: center;
+        padding: 0;
+    }
+    #left-nav span:last-of-type div.round-card {
+        width: 20px;
+        height: 20px;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    #left-nav span:last-of-type div.round-card svg {
+        width:80%;
+    }
+    section.libraries nav.lib-nav ul li a {
+        font-size: var(--font-xs);
     }
     footer .foot-center .controls {
         padding-bottom: 0;
@@ -393,8 +431,5 @@ footer .foot-center .controls i:hover, footer .foot-right i:hover {
     }
     footer .foot-center .controls i:last-of-type {
         padding-right: 0;
-    }
-    footer .foot-right i.fa-list-ul {
-        display: none;
     }
 }
