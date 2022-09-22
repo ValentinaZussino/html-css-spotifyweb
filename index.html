@@ -145,41 +145,41 @@
         </main>
     </div>
     <!-- FOOTER -->
-    <footer class="d-flex just-between">
+    <footer class="d-flex align-center just-between">
         <section class="foot-left d-flex">
-            <div class="playing-album d-flex align-center debug">
+            <div class="playing-album d-flex align-center">
                 <div><img src="./img/sinister.jpeg" alt=""></div>
                 <div>
                     <span class="bold">Sinister</span>
                     <span class="bold">Brano Nome</span>
                 </div>
             </div>
-            <div class="d-flex align-center debug">
+            <div class="d-flex align-center">
                 <i class="fa-regular fa-heart"></i>
                 <i class="fa-regular fa-folder"></i>
             </div> <!-- da mettere in column al breakpoint -->
         </section>
-        <section class="foot-center d-flex fdir-column debug">
-            <div class="controls d-flex align-center just-center debug">
+        <section class="foot-center d-flex fdir-column">
+            <div class="controls d-flex align-center just-center">
                 <i class="fa-solid fa-shuffle"></i>
                 <i class="fa-solid fa-backward"></i>
                 <i class="fa-regular fa-circle-play"></i>
                 <i class="fa-solid fa-forward"></i>
                 <i class="fa-solid fa-rotate-right"></i>
             </div>
-            <div class="track-bar d-flex just-between debug">
+            <div class="track-bar d-flex just-between">
                 <span>0:25</span>
-                <div>barbarbarbarbarbarbarbarbarbarbar</div>
+                <progress id="file" value="10" max="100"></progress>
                 <span>4:35</span>
             </div>
         </section>
-        <section class="foot-right d-flex align-center debug">
+        <section class="foot-right d-flex align-center">
             <span class="d-flex">
                 <i class="fa-solid fa-list-ul"></i>
                 <i class="fa-solid fa-display"></i>
                 <i class="fa-solid fa-volume-high"></i>
             </span>
-            <div>barbarbarbarbar</div>
+            <progress id="file" value="35" max="100"></progress>
         </section>
     </footer>
 </body>
