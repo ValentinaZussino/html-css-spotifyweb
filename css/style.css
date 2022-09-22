@@ -286,6 +286,12 @@ footer {
     z-index: 900;
     padding: 0 0.5rem;
 }
+footer .foot-left, footer .foot-right {
+    flex-basis: 30%;
+} 
+footer .foot-center {
+    flex-basis: 40%;
+}
 footer i {
     cursor: pointer;
 }
@@ -293,8 +299,8 @@ footer .foot-left i, footer .foot-right i {
     padding-right: 0.8rem;
     font-size: var(--font-s);
 }
-footer .foot-left .playing-album {
-    padding-right: 2rem;
+footer .foot-left #preferences {
+    padding-left: 1.5rem;
 }
 footer .foot-left .playing-album div:first-of-type {
     margin-right: 10px;
@@ -304,6 +310,12 @@ footer .foot-left img {
 }
 footer .foot-left i {
     color: var(--lightgray);
+}
+footer .foot-left i.fa-heart:hover {
+    color: var(--lightgreen);
+}
+footer .foot-left i.fa-folder:hover {
+    color: var(--white);
 }
 footer .foot-left .playing-album div span:first-of-type, footer .foot-center .track-bar span {
     font-size: var(--font-s);
@@ -324,11 +336,15 @@ footer .foot-center .controls i.fa-circle-play {
     padding: 0 1.2rem 0 0.2rem;
 }
 footer .track-bar progress {
-    width: 35vw;
-    margin: 0 0.5rem;
+    width: 85%;
+    margin: 0 0.3rem;
 }
-footer .foot-left progress {
-    width: 10vw;
+footer .foot-right {
+    justify-content: flex-end;
+    padding-left: 0.7rem;
+}
+footer .foot-right progress {
+    width: 50%;
 }
 /* RESPONSIVE */
 @media screen and (max-width: 768px) {
@@ -340,6 +356,17 @@ footer .foot-left progress {
     .card {
         width: calc((100% - 1rem) / 2);
     }
+    footer .foot-left .playing-album div:last-of-type {
+        display: none;
+    }
+    footer .foot-left #preferences {
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-left: 0.5rem;
+    }
+    /* footer .foot-center {
+        flex-basis: 45%;
+    } */
 }
 /* @media screen and (max-width: 450px) {
     .main-content {
