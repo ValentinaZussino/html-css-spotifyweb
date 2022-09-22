@@ -15,6 +15,7 @@
     --font-m: 0.8rem;
     --font-l: 15px;
     --font-s: 12px;
+    --font-xs: 11px;
 }
 .debug {
     border: 1px solid yellow;
@@ -276,14 +277,39 @@ ul li:hover a {
     padding-top: 0.5rem;
 }
  /* FOOTER */
- footer {
+footer {
     width: 100%;
     height: 90px;
-    background-color: brown;
+    background-color: var(--darkgray);
     position: fixed;
     bottom: 0;
     z-index: 900;
+    padding: 0.5rem;
 }
+footer .foot-left i, footer .foot-right i {
+    padding-right: 0.8rem;
+    font-size: var(--font-s);
+}
+footer .foot-left .playing-album {
+    padding-right: 2rem;
+}
+footer .foot-left .playing-album div:first-of-type {
+    margin-right: 10px;
+}
+footer .foot-left img {
+    width: 3.5rem;
+}
+footer .foot-left i {
+    color: var(--lightgray);
+}
+footer .foot-left .playing-album div span:first-of-type {
+    font-size: var(--font-s);
+}
+footer .foot-left .playing-album div span:last-of-type {
+    font-size: var(--font-xs);
+    color: var(--lightgray);
+}
+
 /* RESPONSIVE */
 @media screen and (max-width: 768px) {
     .card {
