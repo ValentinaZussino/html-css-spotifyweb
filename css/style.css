@@ -30,6 +30,7 @@ body {
 }
 img {
     max-width: 100%;
+    display: block;
 }
 span {
     display: block;
@@ -38,6 +39,7 @@ span {
 .wrapper {
     width: 100%;
     height: 100vh;
+    overflow-y: hidden;
 }
 .d-flex {
     display: flex;
@@ -332,12 +334,11 @@ footer .foot-center .controls {
     padding-bottom: 1rem;
 }
 footer .foot-center .controls i {
-    padding-right: 1rem;
-    font-size: var(--font-s);
+    padding-right: 1.5rem;
+    font-size: 1rem;
 }
 footer .foot-center .controls i.fa-circle-play {
-    font-size: 23px;
-    padding: 0 1.2rem 0 0.2rem;
+    font-size: 1.6rem;
 }
 footer .track-bar progress {
     width: 85%;
@@ -350,6 +351,9 @@ footer .foot-right {
 footer .foot-right progress {
     width: 50%;
 }
+footer .foot-center .controls i:hover, footer .foot-right i:hover {
+    transform: scale(1.2);
+}
 /* RESPONSIVE */
 @media screen and (max-width: 768px) {
     .card {
@@ -360,21 +364,20 @@ footer .foot-right progress {
     .card {
         width: calc((100% - 1rem) / 2);
     }
-    footer .foot-left .playing-album div:last-of-type {
+    footer .foot-left .playing-album div:last-of-type, footer .foot-right i.fa-display {
         display: none;
     }
     footer .foot-left #preferences {
         flex-direction: column;
         justify-content: space-evenly;
         padding-left: 0.5rem;
-    }
-    /* footer .foot-center {
-        flex-basis: 45%;
-    } */
+    }  
 }
 /* @media screen and (max-width: 450px) {
     .main-content {
-        min-width: 450px;
-        height: 100vh;
+        min-width: 400px;
+    }
+    .card {
+        width: 70%;
     }
 } */
