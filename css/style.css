@@ -110,9 +110,6 @@ main {
     background-color: var(--black);
     z-index: 800;
     padding: 1.2rem 1rem 0 1rem;
-}
-.prova {
-    height: 100%;
     position: relative;
 }
 #spotify {
@@ -157,6 +154,8 @@ svg path {
     vertical-align:middle;
 }
 .playlist-list {
+    height: 250px;
+    overflow-y: auto;
 }
 .playlist-list ul li {
     padding-top: 0.5rem;
@@ -173,6 +172,7 @@ svg path {
     width: calc(100% - 230px);
     height: 100% ;
     background-color: var(--deepblue);
+    overflow-y: hidden;
 }
 aside {
     width: 100%;
