@@ -95,12 +95,16 @@ span {
     color: var(--lightgray);
     font-weight: bold;
 }
-.greenline {
+a.greenline {
+    color: var(--white);
+}
+a.greenline::after {
+    content: '';
+    display: block;
     height: 2px;
-    width: 30px;
+    width: 45%;
     background-color: var(--lightgreen);
-    margin: 0 auto;
-    margin-top: 3px;
+    margin: 0.1rem auto;
 }
  /* MAIN */
 main {
