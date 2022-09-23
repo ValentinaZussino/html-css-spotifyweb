@@ -387,6 +387,41 @@ progress::-moz-progress-bar {
 footer .foot-center .controls i:hover, footer .foot-right i:hover {
     transform: scale(1.2);
 }
+/* PAG STRANGER */
+/* FOOTER */
+#stranger .main-content {
+    background-image: linear-gradient(to right, rgb(174, 42, 151), rgb(93, 139, 232));
+}
+#stranger aside {
+    height: 80px;
+}
+#stranger .album-presentation {
+    height: 40%;
+    padding-top: 100px;
+    padding-left: 2rem;
+}
+#stranger .album-presentation .single-cover {
+    width: 15rem;
+    padding-right: 1.5rem;
+}
+#stranger .album-presentation .single-cover img {
+    box-shadow: 7px 7px 33px -8px #000000;
+}
+#stranger .album-presentation .presentation-txt {
+    padding-top: 2rem;
+}
+#stranger .presentation-txt span:first-of-type {
+    font-size: var(--font-s);
+    padding-bottom: 0.8rem;
+}
+#stranger .presentation-txt h1 {
+    font-size: 3.5rem;
+    padding-bottom: 2.3rem;
+}
+#stranger .presentation-txt span.subtitle {
+    font-size: var(--font-l);
+    padding-bottom: 0.8rem;
+}
 /* RESPONSIVE */
 @media screen and (max-width: 768px) {
     .card {
