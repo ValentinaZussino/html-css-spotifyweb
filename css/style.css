@@ -337,6 +337,7 @@ footer .foot-center .controls {
 footer .foot-center .controls i {
     padding-right: 1.5rem;
     font-size: 1rem;
+    text-align: center;
 }
 footer .foot-center .controls i.fa-circle-play {
     font-size: 1.6rem;
@@ -344,7 +345,6 @@ footer .foot-center .controls i.fa-circle-play {
 footer .track-bar progress {
     width: 85%;
     margin: 0 0.3rem;
-    border-radius: 20%;
 }
 footer .foot-right {
     justify-content: flex-end;
@@ -370,8 +370,18 @@ progress::-webkit-progress-value {
                                  rgba(255, 255, 255, .25), 
                                  rgba(0, 0, 0, .25)),
          -webkit-linear-gradient(left, #09c, #f44);
-  
       border-radius: 10px; 
+      background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+progress::-moz-progress-bar {
+    background-image:
+         -webkit-linear-gradient(-45deg, 
+                                 transparent 33%, rgba(0, 0, 0, .1) 33%, 
+                                 rgba(0,0, 0, .1) 66%, transparent 66%),
+         -webkit-linear-gradient(top, 
+                                 rgba(255, 255, 255, .25), 
+                                 rgba(0, 0, 0, .25)),
+         -webkit-linear-gradient(left, #09c, #f44);
       background-size: 35px 20px, 100% 100%, 100% 100%;
 }
 footer .foot-center .controls i:hover, footer .foot-right i:hover {
