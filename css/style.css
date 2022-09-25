@@ -485,8 +485,12 @@ footer .foot-center .controls i:hover, footer .foot-right i:hover {
     border-bottom: 1px solid var(--lightgray);
     padding-bottom: 0.5rem;
 }
+#stranger table tr:hover {
+    background-color: rgba(140, 140, 140, 0.297);
+}
 #stranger table td {
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
 }
 #stranger table .first-row-song td {
     padding-top: 1.5rem;
@@ -494,6 +498,16 @@ footer .foot-center .controls i:hover, footer .foot-right i:hover {
 #stranger table td div:first-of-type {
     width: 40px;
     margin-right: 15px;
+}
+#stranger table tr td i.i-none {
+    display: none;
+}
+#stranger table tr:hover td .song-number {
+    display: none;
+}
+#stranger table tr:hover td i.i-none {
+    display: block;
+    cursor: pointer;
 }
 #stranger table td div span:first-of-type {
     font-size: var(--font-l);
