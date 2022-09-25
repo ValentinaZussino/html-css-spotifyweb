@@ -404,6 +404,10 @@ footer .foot-center .controls i:hover, footer .foot-right i:hover {
     height: 80px;
 }
 /* presentation album section */
+#stranger .single-album-content {
+    height: 100%;
+    overflow-y: auto;
+}
 #stranger .album-presentation {
     padding-top: 100px;
     padding-left: 2rem;
@@ -440,7 +444,7 @@ footer .foot-center .controls i:hover, footer .foot-right i:hover {
 /* songs section */
 #stranger .songs-section {
     padding: 2rem;
-    background-image: linear-gradient( rgba(15, 15, 15, 0.5), rgba(61, 1, 51, 0.5));
+    background-image: linear-gradient( rgba(23, 23, 23, 0.4), rgba(0, 0, 0, 0.748));
 }
 #stranger .songs-section .songs-controls {
     font-size: 1.8rem;
