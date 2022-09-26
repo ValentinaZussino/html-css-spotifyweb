@@ -13,7 +13,7 @@
     --lightgray: rgba(113, 113, 113, 1);
     --lightgreen: rgba(173, 255, 47, 1);
     --second-green:rgb(31, 223, 100);
-    --second-white:rgb(211, 211, 211);
+    --second-white:rgb(193, 193, 193);
     --font-m: 0.8rem;
     --font-l: 15px;
     --font-s: 12px;
@@ -444,7 +444,7 @@ footer .foot-center .controls i:hover, footer .foot-right i:hover {
 /* songs section */
 #stranger .songs-section {
     padding: 2rem;
-    background-image: linear-gradient( rgba(23, 23, 23, 0.4), rgba(0, 0, 0, 0.748));
+    background-image: linear-gradient( rgba(23, 23, 23, 0.4), rgba(0, 0, 0, 0.8));
 }
 #stranger .songs-section .songs-controls {
     font-size: 1.8rem;
@@ -513,19 +513,55 @@ footer .foot-center .controls i:hover, footer .foot-right i:hover {
     font-size: var(--font-l);
     color: var(--white);
 }
+/* links sections */
 #stranger .navlinks-section {
     padding-top: 3.5rem;
     padding-bottom: 2rem;
     border-bottom: 1px solid var(--lightgray);
 }
+#stranger .navlinks-section ul li .nav-second-white, #stranger .legal-links .nav-second-white {
+    text-decoration: none;
+    color: var(--second-white);
+}
 #stranger .navlinks-section ul {
     padding-right: 4.5rem;
 }
+#stranger .navlinks-section ul li .nav-second-white:hover, #stranger .legal-links .nav-second-white:hover {
+    color: var(--white);
+    text-decoration: underline;
+}
 #stranger .navlinks-section ul li {
     list-style-type: none;
-    text-decoration: none;
     font-size: var(--font-l);
     padding-top: 0.5rem;
+}
+#stranger .social div {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(63, 63, 63, 0.483);
+    text-align: center;
+    margin-left: 1rem;
+}
+#stranger .social div:hover {
+    background-color: rgb(114, 114, 114);
+}
+#stranger .social div .txt-second-white {
+    line-height: 40px;
+}
+#stranger .social div:hover i {
+    color: var(--white);
+}
+#stranger .legal-links, #stranger .copyright {
+    padding: 2rem 0;
+}
+#stranger .legal-links .nav-second-white {
+    padding-right: 1rem;
+    font-size: var(--font-m);
+}
+#stranger .copyright {
+    text-align: right;
+    font-size: var(--font-m);
 }
 /* RESPONSIVE */
 @media screen and (max-width: 768px) {
