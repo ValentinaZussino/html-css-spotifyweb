@@ -513,6 +513,20 @@ footer .foot-center .controls i:hover, footer .foot-right i:hover {
     font-size: var(--font-l);
     color: var(--white);
 }
+#stranger .navlinks-section {
+    padding-top: 3.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--lightgray);
+}
+#stranger .navlinks-section ul {
+    padding-right: 4.5rem;
+}
+#stranger .navlinks-section ul li {
+    list-style-type: none;
+    text-decoration: none;
+    font-size: var(--font-l);
+    padding-top: 0.5rem;
+}
 /* RESPONSIVE */
 @media screen and (max-width: 768px) {
     .card {
